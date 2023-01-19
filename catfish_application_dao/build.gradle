@@ -1,0 +1,8 @@
+dependencies {
+
+    implementation commonLibs.json
+    annotationProcessor commonLibs.lombok
+
+    testImplementation testLibs.jupiterAPI
+    testImplementation testLibs.jupiterEngine
+}

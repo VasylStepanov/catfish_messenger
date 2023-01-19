@@ -1,0 +1,9 @@
+dependencies {
+    implementation commonLibs.json
+    annotationProcessor commonLibs.lombok
+
+    implementation serverLibs.hibernateEntityManager
+
+    testImplementation testLibs.jupiterAPI
+    testImplementation testLibs.jupiterEngine
+}

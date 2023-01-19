@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+}
+
+project("catfish_client"){
+    apply plugin: 'application'
+}
+
+project("catfish_server"){
+}
+
+subprojects {
+    apply plugin: 'java'
+}
+
+allprojects {
+
+    task('built').doLast {
+        println "$project.name is built"
+    }
+
+    apply from: "$rootProject.projectDir/dependencies.gradle"
+
+    group 'org.example'
+    version '1.0-SNAPSHOT'
+
+    java.sourceCompatibility(JavaVersion.VERSION_17)
+    java.targetCompatibility(JavaVersion.VERSION_17)
+
+    repositories {
+        mavenCentral()
+
+        maven {
+            url "https://local.repository1/content/groups/public-maven.dev/"
+        }
+    }
+
+    configurations {
+        compileOnly.extendsFrom annotationProcessor
+        testCompileOnly.extendsFrom annotationProcessor
+        testAnnotationProcessor.extendsFrom annotationProcessor
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
