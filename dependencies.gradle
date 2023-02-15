@@ -9,7 +9,10 @@ ext.clientLibs = [
 ]
 
 ext.serverLibs = [
-    'hibernateEntityManager' : 'org.hibernate:hibernate-entitymanager:5.6.14.Final'
+    'hibernateCore' : 'org.hibernate:hibernate-core:5.6.14.Final',
+    'hibernateEntity' : 'org.hibernate:hibernate-entitymanager:5.6.14.Final',
+    'mysql' : 'com.mysql:mysql-connector-j:8.0.31',
+    'h2' : 'com.h2database:h2:1.4.200'
 ]
 
 ext.testLibs = [

@@ -1,8 +1,11 @@
 /.gradle/
 /.idea/
 /build/
-/catfish_application_dao/build/
+/catfish_application_dto/build/
 /catfish_client/build/
 /catfish_server/build/
 /gradle/
+/catfish_server/src/main/resources/application.properties
+/catfish_server/src/main/resources/META-INF
+/catfish_server/src/test/resources/META-INF
 

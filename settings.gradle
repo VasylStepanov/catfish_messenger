@@ -1,5 +1,5 @@
 rootProject.name = 'catfish_messenger'
 include 'catfish_client'
 include 'catfish_server'
-include 'catfish_application_dao'
+include 'catfish_application_dto'
 

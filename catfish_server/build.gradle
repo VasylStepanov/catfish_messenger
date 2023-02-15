@@ -1,9 +1,15 @@
 dependencies {
+    implementation project(":catfish_application_dto")
+
     implementation commonLibs.json
     annotationProcessor commonLibs.lombok
 
-    implementation serverLibs.hibernateEntityManager
+    implementation serverLibs.hibernateCore
+    implementation serverLibs.hibernateEntity
 
+    implementation serverLibs.mysql
+
+    testImplementation serverLibs.h2
     testImplementation testLibs.jupiterAPI
     testImplementation testLibs.jupiterEngine
 }

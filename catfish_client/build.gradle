@@ -8,7 +8,7 @@ javafx {
 }
 
 dependencies {
-    implementation project(":catfish_application_dao")
+    implementation project(":catfish_application_dto")
 
     implementation commonLibs.json
     annotationProcessor commonLibs.lombok

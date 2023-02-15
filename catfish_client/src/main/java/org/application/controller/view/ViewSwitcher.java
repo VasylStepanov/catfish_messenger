@@ -14,6 +14,7 @@ import java.io.IOException;
 
 public class ViewSwitcher {
 
+    private ViewSwitcher(){}
     private static Scene scene;
 
     static {
